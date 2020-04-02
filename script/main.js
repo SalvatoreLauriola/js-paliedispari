@@ -2,35 +2,35 @@
 
 // 1 Chiedere all’utente di inserire una parola;
 
-// var parola = prompt('Inserisci una parola');
-// // console.log(parola)
+var parola = prompt('Inserisci una parola').toLowerCase();
+// console.log(parola)
 
 // // 2 Creare una funzione per capire se la parola inserita è palindroma
 
 // // invocazione
-// var parolaReverse = reverseChar(parola);
+var parolaReverse = reverseChar(parola);
 
-// console.log('Parola');
-// console.log(parola);
-// console.log(parolaReverse);
+console.log('Parola');
+console.log(parola);
+console.log(parolaReverse);
 
-// if (parola == parolaReverse) {
-//   console.log('La parola inserita è palindroma');
+if (parola == parolaReverse) {
+  console.log('La parola inserita è palindroma');
 
-// }else {
-//   console.log('La parola inserita non è palindroma');
-// }
+}else {
+  console.log('La parola inserita non è palindroma');
+}
 
-// function reverseChar (word) {
+function reverseChar (word) {
 
-//   var reverse = '';
+  var reverse = '';
 
-//   for (var i = word.length -1; i >= 0; i--) {
-//     reverse += word[i];
-//   }
+  for (var i = word.length -1; i >= 0; i--) {
+    reverse += word[i];
+  }
   
-//   return reverse;
-// }
+  return reverse;
+}
 
 
 // Esercizio 2 
@@ -42,44 +42,43 @@
 // Dichiariamo chi ha vinto.
 
 
-var pariDispari = prompt('Inserisci pari o dispari');
+// var pariDispari = prompt('Inserisci pari o dispari');
 
-var numeroUtente = parseInt(prompt('Inserisci numero tra 1 e 5'))
+// var numeroUtente = parseInt(prompt('Inserisci numero tra 1 e 5'))
 
-var rand;
+// var pcNumber = getRandomNumber(1, 5);
 
-var pcNumber = getRandomNumber(rand);
+// console.log(numeroUtente);
 
-console.log(numeroUtente);
-console.log(pcNumber);
+// console.log(pcNumber);
 
-var somma = numeroUtente + pcNumber;
+// var somma = numeroUtente + pcNumber;
 
-console.log(somma);
+// console.log(somma);
 
-function getRandomNumber (number) {
+// function getRandomNumber (min, max) {
 
-  var rand = Math.floor(Math.random() *5) + 1 ;
+//   var rand = Math.floor(Math.random() * (max - min + 1) ) + min;
 
-  return rand;
+//   return rand;
 
-}
+// }
  
+// function parDisp(numero) {
+//     if (numero % 2 == 0){
+      
+//       return 'pari';
+//     }
 
-function parDisp(numero) {
-    if (numero % 2 == 0){
-      return 'pari';
-    }
+//     return 'dispari';
+//   }
 
-    return 'dispari';
-  }
-
-  if (parDisp(somma) == 'pari'){
-  console.log('Hai vinto')
+//   if (parDisp(somma) == pariDispari){
+//   console.log('Hai vinto')
 
 
-  }else {
-    console.log('Hai perso');
-  }
+//   }else {
+//     console.log('Hai perso');
+//   }
 
   
